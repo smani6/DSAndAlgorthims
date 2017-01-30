@@ -165,6 +165,9 @@ class BinarySearchTree(object):
                                                 currentNode.rightChild.leftChild, currentNode.rightChild.rightChild)
 
 
+
+
+
 if __name__ == "__main__":
 
     mytree = BinarySearchTree()
