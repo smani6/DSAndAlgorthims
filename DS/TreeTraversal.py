@@ -10,6 +10,12 @@ class TreeTraversal(object):
             self.preorder(tree.getLeftChild())
             self.preorder(tree.getRightChild())
 
+    def preorder_list(self,tree):
+        if not tree:
+            return []
+
+        return [self.preorder_list[tree.getRootValue()] + self.preorder_list[tree.getLeftChild()] + self.preoder_list(tree.getRightChild())]
+
 
     def postorder(self,tree):
 
@@ -21,6 +27,6 @@ class TreeTraversal(object):
     def inorder(self,tree):
 
         if tree:
-            self.inorder(self.getLeftChild())
+            self.inorder(tree.getLeftChild())
             print tree.getRootValue()
-            self.inorder(self.getRightChild())
+            self.inorder(tree.getRightChild())

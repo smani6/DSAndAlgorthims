@@ -8,6 +8,15 @@ class TreeNode(object):
         self.rightChild = right
         self.parent = parent
 
+    def getRootValue(self):
+        return self.payload
+
+    def getLeftChild(self):
+        return self.leftChild
+
+    def getRightChild(self):
+        return self.rightChild
+
     def hasLeftChild(self):
         return self.leftChild
 
